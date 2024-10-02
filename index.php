@@ -8,9 +8,9 @@ const MAX_FAILS_PER_ENDPOINT = 5;  // Stop sending after 5 failures per endpoint
 const WEBHOOKS_FILE_PATH = 'webhooks.txt';  // webhoos.txt Todo: allow addin as argument to script
 
 //include required classes
-require_once 'classes/webhook.php';
+require_once 'classes/Webhook.php';
 require_once 'classes/WebhookProcessor.php';
-require_once 'classes/webhookSender.php';
+require_once 'classes/WebhookSender.php';
 
 //load webhooks
 $webhooks = WebhookProcessor::loadWebhooksFromFile(WEBHOOKS_FILE_PATH);
